@@ -1,0 +1,330 @@
+:root {
+  --white:#fffffe;
+}
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+header {
+    width: 100%;
+    background-image: linear-gradient(to right, #BFE0FF, rgb(234, 242, 248), rgb(240, 208, 249));
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+/*  TypoGraphy  */
+
+.header-navigation span {
+    margin: 0 0 0 1em;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.main-navigation a {
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    padding: .25em 0;
+}
+
+/*  Layout  */
+
+.basic-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.main-navigation {
+    background: #EDEDED;
+
+}
+.main-navigation ul {
+    padding: 0;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+}
+.main-navigation nav {
+    width: 80%;
+    margin: auto;
+}
+.main-navigation li{
+    width: 12%;
+    min-width: 100px;
+    text-align: center;
+    padding: .5em 0;
+    border-radius: .1em;
+}
+.main-navigation li:hover,
+.main-navigation li:focus{
+    background: #fcfbfb;
+}
+
+.current-page {
+    background: #fcfbfb;
+}
+
+
+.register-container {
+    padding: 7em 1em;
+    color: darkslateblue;
+}
+
+.register-container h1 {
+    color: darkslateblue;
+}
+
+.image-background {
+    background: url('/public/images/landing-page-background3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#register-form {
+    width: 40%;
+}
+
+.register-page-text {
+    width: 40%;
+}
+
+/* login form */
+
+#login-form {
+    width: 40%;
+}
+#login-form div{
+    padding: 1em 0;
+}
+
+#form-error {
+    color: red;
+    font-weight: 500;
+    text-align: center;
+}
+#profile-update-form {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 5em;
+}
+
+
+/* Sentry Score meter */
+.business-score-meter {
+  fill: none;
+  stroke-linecap: round;
+}
+.ring--red {
+  stroke: rgb(250, 69, 69);
+  stroke-dasharray: 12.5 35; stroke-dashoffset: -30.5;
+}
+.ring--coral {
+  stroke: lightcoral;
+  stroke-dasharray: 3 45.1; stroke-dashoffset: 4;
+
+}
+.ring--gold {
+  stroke: gold;
+  stroke-dasharray:3 49.3; stroke-dashoffset: 4;
+}
+.ring--blue {
+  stroke: deepskyblue;
+  stroke-dasharray:3 53.5; stroke-dashoffset: 4;
+}
+.ring--green {
+  stroke: lightgreen;
+  stroke-dasharray:2.8 57.4; stroke-dashoffset: 3.5;
+}
+.score-number {
+  font-size: 5em;
+  font-weight: 600;
+}
+.score-text {
+  font-size: 2em;
+  font-weight: 500;
+}
+#score-change-number {
+  fill: #C5332a;
+  font-size: 2em;
+  font-weight: 500;
+}
+#score-change-text {
+  font-weight: 500;
+}  
+.sentry-meter-limits {
+  fill: #a7aaac;
+}
+.small-meter-basic {
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-dashoffset: 25;
+  stroke: gold;
+  stroke-dasharray: 0 100;
+  fill: lightgoldenrodyellow;
+  transition-duration: 1s;
+}
+.business-score-small-meters {
+  padding-top: 30px;
+  fill: rgb(189, 136, 0);
+  font-weight: 600;
+}
+.small-meters-description {
+  padding-top: 10px;
+  width: 130px;
+  text-align: center;
+}
+.sentry-score-links {
+  padding-top: 3em;
+  text-align: center;
+  color: #286CEF;
+}
+
+#ring--pointer1 {
+  transition-duration: 1s;
+}
+#ring--pointer2 {
+  transition-duration: 1s;
+}
+
+.meter-update-sign {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.ellipsis {
+  display: inline-block;
+  animation: ellipsis 1s infinite;
+}
+
+@keyframes ellipsis {
+  0% {
+    content: ".";
+  }
+  25% {
+    content: "..";
+  }
+  50% {
+    content: "...";
+  }
+  75% {
+    content: "..";
+  }
+}
+
+/*---------------------Sentry score page-----------------------*/
+
+  /*this is text before card*/
+
+      /* styling of bootstrap accordian*/
+      .card {
+        box-shadow: 0 0 10px rgba(143, 142, 142, 0.3)
+      }
+      .accordion {
+        padding: 1em 0;
+      }
+      .accordion-button {
+        background-color: #ffffff;
+      }
+      .accordion-button:not(.collapsed) {
+        background-color: #f9f9f9;
+      }
+      .accordion-button:focus {
+        box-shadow: 0px 0px 0px 0.25em rgba(250, 248, 248, 0.3)
+      }
+
+#sentryscore-collapse {
+  border-bottom: 1px solid silver;
+}
+.sentryscore-content {
+  color: #4D5053;
+}
+.sentryscore-score-factors span{
+  font-weight: 600;
+}
+.metrics-svg {
+  width: 50%;
+}
+.metrics-card-content {
+  width: 50%;
+}
+
+/*test page table*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+}
+.test-table-container {
+  width: 50%;
+  padding: 2em;
+}
+.test-page-datametrics {
+  padding: 2em;
+  width: 50%;
+}
+.test-page-calculations div{
+  padding: 10px 5px;
+}
+.datametrics-container {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.datametrics-date-selector {
+  padding: 2em 0;
+}
+
+/* admin page */
+
+.admin-container {
+  padding: 5em 0
+}
+
+.weights-container {
+  width: 50%;
+}
+
+#weights-select-form {
+  width: 100%
+}
+
+.weights-update-heading {
+  text-align: left;
+  width: 100%;
+}
+
+.weights-select-flex {
+  width: 100%;
+}
+.ranges-container {
+  width: 50%;
+  text-align: left;
+}
+
+#ranges-select-form {
+  width: 100%
+}
+
+.input-group {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#company_select {
+  height: 40px;
+  margin: 2em;
+}

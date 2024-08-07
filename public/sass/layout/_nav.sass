@@ -1,0 +1,40 @@
+.main-navigation
+
+    &.is-open
+        position: fixed
+        
+
+
+// Hamburger
+.nav-toggle
+    padding: 1em
+    top: 1.75em
+    right: 1em
+    position: absolute
+    display: block
+    cursor: pointer
+    @media (min-width: 745px)
+        display: none
+
+.hamburger, .hamburger::before, .hamburger::after
+    content: ''
+    display: block
+    width: 2em
+    height: 3px
+    background: $white
+    transition: all ease-in-out 250ms
+
+.hamburger::before
+    transform: translateY(-6px)
+
+
+.hamburger::after
+    transform: translateY(3px)
+
+.hamburger.is-open
+    transform: rotate(45deg)
+    &::after
+        transform: rotate(-90deg) translateX(3px)
+
+    &::before
+        opacity: 0

@@ -1,0 +1,60 @@
+h1,h2,h3,h4,h5,h6,p
+    margin: 0 0 .75em
+
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, 
+h5:last-child, h6:last-child, p:last-child
+    margin: 0
+
+
+h1
+    font-size: 2rem
+    font-weight: $font-light
+    line-height: 1.1
+    text-transform: uppercase
+    letter-spacing: 3px
+
+h2
+    font-size: 1.2rem
+    text-transform: uppercase
+    letter-spacing: 1.5px
+    line-height: 1
+
+.title-large
+    font-size: 3rem
+    line-height: 1
+    span
+        font-weight: $font-black
+
+.intro
+    font-size: 1.15em
+
+.promo-title
+    background: $accent
+    color: $text-inverse
+    margin: 0 auto
+    padding: 2em
+    transform: translateY(30%)
+    max-width: 70%
+    @media (min-width: 540px) 
+        transform: translateY(50%)
+
+    & + .bg-primary
+        padding-top: 6em
+        @media (min-width: 540px)
+            padding-top: 8em
+
+    @media (min-width: 845px)
+        max-width: 700px
+
+.title-footer
+    text-transform: uppercase
+    letter-spacing: 3px
+    line-height: 1
+
+    &::before,&::after
+        content: ''
+        height: 1px
+        display: block
+        background: $text-inverse
+        margin: .5em 0
+        opacity: .3
